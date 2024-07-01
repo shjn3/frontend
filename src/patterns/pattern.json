@@ -1,0 +1,17 @@
+
+{
+    "pattern":{
+        "x":[
+            "*${name} \\- $${symbol}*\n\n𝔹𝕦𝕪 𝕠𝕟 𝔻𝕀ℙ\n\nCA \\- ${ca}\n\nDexscrenner ${dex_url}\n\nJoin telegram channel ${channel_url}"
+        ],
+        "telegram":[
+            "🪙 *${name} \\- $${symbol}*\n\n_${description}_\n\n*✔️ RENOUNCED*\n*✔️ FREEZE REVOKED*\n*✔️ BURN 100%*\n\n📌 *`${ca}`*\n\n⚡️ *[META](${meta_bot}) \\| [SOL_TRADING_BOT](${sol_trading_bot}) \\| [PHOTON](${photon_url})\\| [TROJAN](${trojan_bot})*\n\n🌐 ${info}\n📈 [Dexscreener](${dex_url}) \\| [Birdeye](${bireye_url}) \\| [Photon](${photon_url})"
+        ]
+    },
+    "description":{
+        "new_launch_word":["Just launching.","New launch.","New version."],
+        "normal":["Weed out what looks OK, may go up, may go down. Not financial advice. Do your own research and be safe","bought this dip too for obvious reasons if you know what I'm talking about","Good volume and chart is moving well.","Look entry good to buy. Not Financial advice. You should check again before investing","Be safe with entries. Good branding. DYOR FOR SAFE ENTRY.","Nice branding and ticker. Just going live, find safe entry. Degen.","The project seems to still be very hot. Take profits when you feel enough.","Good volume for now. Community forming. Team working hard to pump more. Leťs see what happen.","Good volume in buys. Community active. First time I work with this team. Dev has good plans to pump it. Leťs see where it goes","Chart seems good. Nice volume for now. Community forming. Team has been hard working. Find your safe entries , DYOR.","Hurry up to load your bags. Good volume in buys."]
+    }
+}
+
+   
