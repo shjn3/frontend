@@ -1,5 +1,5 @@
 
-
+import capitalize from "../utils/capitalize"
 function getInfoToken(pair: Pair) {
     let result = ""
     let arr_info: { name: string, value: string }[] = []
@@ -22,7 +22,7 @@ function getInfoToken(pair: Pair) {
             })
         }
 
-        result = arr_info.map((d) => `[${d.name}](${d.value})`).join('\\|')
+        result = arr_info.map((d) => `[${capitalize(d.name)}](${d.value})`).join(' \\| ')
     }
 
     return result;
