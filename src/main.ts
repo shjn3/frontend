@@ -3,8 +3,6 @@ import { setupCounter } from './counter.ts'
 import generateMessage from './generateMessage.ts'
 import telegramUtils from './api/telegram.js'
 import { get_dexscreen_pair } from './api/dexscreen.ts'
-import patterns from './patterns/pattern.json'
-import getRandomInt from './utils/getRandom.ts'
 import getDescriptionToken from './token/getDescriptionToken.ts'
 import getInfoToken from './token/getInfoToken.ts'
 
