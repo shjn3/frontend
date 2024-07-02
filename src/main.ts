@@ -53,7 +53,7 @@ btn_send?.addEventListener("click", async () => {
     bireye_url: `https://birdeye.so/token/${ca}`,
     sol_trading_bot: `https://t.me/SolTradingBot?start=${ca}-DRDAzntWc`,
     trojan_bot: `https://t.me/solana_trojanbot?start=r-shj_n3-${ca}`,
-    meta_bot: "https://t.me/MetaSolanaBot?start=PUVD9yE7",
+    meta_bot: `https://t.me/MetaSolanaBot?start=ESGFYCYF`,
     caller_twitter_url: "https://x.com/lorecarbia",
     caller_telegram_url: "https://t.me/callerjerry",
     channel_url: "https://t.me/jerrysgamble",
