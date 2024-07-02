@@ -2,10 +2,10 @@
 {
     "pattern":{
         "x":[
-            "*${name} \\- $${symbol}*\n\n𝔹𝕦𝕪 𝕠𝕟 𝔻𝕀ℙ\n\nCA \\- ${ca}\n\nDexscrenner ${dex_url}\n\nJoin telegram channel ${channel_url}"
+            "*${name} \\- $${symbol}*\n\n𝔹𝕦𝕪 𝕠𝕟 𝔻𝕀ℙ\\.\n𝔻𝕐𝕆ℝ 𝔽𝕆ℝ 𝕊𝔸𝔽𝔼 𝔼ℕ𝕋ℝ𝕐\\.\n\nCA \\- ${ca}\n\nDexscrenner ${dex_url}\n\nJoin telegram channel ${channel_url}"
         ],
         "telegram":[
-            "🪙 *${name} \\- $${symbol}*\n\n_${description}_\n\n*✔️ RENOUNCED*\n*✔️ FREEZE REVOKED*\n*✔️ BURN 100%*\n\n📌 *`${ca}`*\n⚡️ *[META](${meta_bot}) \\| [SOL_TRADING_BOT](${sol_trading_bot}) \\| [PHOTON](${photon_url}) \\| [TROJAN](${trojan_bot})*\n📈 [Dexscreener](${dex_url}) \\| [Birdeye](${bireye_url}) \\| [Photon](${photon_url})"
+            "🪙 *${name} \\- $${symbol}*\n\n_${description}_\n\n*✔️ RENOUNCED*\n*✔️ FREEZE REVOKED*\n*✔️ BURN 100%*\n\n📌 *`${ca}`*\n⚡️ *[META](${meta_bot}) \\| [SOL_TRADING_BOT](${sol_trading_bot}) \\| [PHOTON](${photon_url}) \\| [TROJAN](${trojan_bot})*\n${info}\n📈 [Dexscreener](${dex_url}) \\| [Birdeye](${bireye_url}) \\| [Photon](${photon_url})"
         ]
     },
     "description":{

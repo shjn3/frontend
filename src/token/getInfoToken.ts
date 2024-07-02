@@ -22,7 +22,7 @@ function getInfoToken(pair: Pair) {
             })
         }
 
-        result = arr_info.map((d) => `[${capitalize(d.name)}](${d.value})`).join(' \\| ')
+        result = arr_info.map((d) => `📈 [${capitalize(d.name)}](${d.value})`).join(' \\| ')
     }
 
     return result;
