@@ -1,6 +1,9 @@
 
 import capitalize from "../utils/capitalize"
-function getInfoToken(pair: Pair) {
+function getInfoToken(pair: Pair | null) {
+    if (pair == null) {
+        return ""
+    }
     let result = ""
     let arr_info: { name: string, value: string }[] = []
     if (pair.info) {
@@ -22,7 +25,8 @@ function getInfoToken(pair: Pair) {
             })
         }
 
-        result = arr_info.map((d) => `📈 [${capitalize(d.name)}](${d.value})`).join(' \\| ')
+        result = arr_info.map((d) => `📱 [${capitalize(d.name)}](${d.value})`).join(' \\| ')
+        result += "\n"
     }
 
     return result;

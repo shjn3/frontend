@@ -2,10 +2,10 @@
 {
     "pattern":{
         "x":[
-            "*${name} \\- $${symbol}*\n\n𝔹𝕦𝕪 𝕠𝕟 𝔻𝕀ℙ\\.\n𝔻𝕐𝕆ℝ 𝔽𝕆ℝ 𝕊𝔸𝔽𝔼 𝔼ℕ𝕋ℝ𝕐\\.\n\nCA \\- ${ca}\n\nDexscrenner ${dex_url}\n\nJoin telegram channel ${channel_url}"
+            "*${name} \\- $${symbol} \\(SOL\\)*\n\n𝔹𝕦𝕪 𝕠𝕟 𝔻𝕀ℙ\\.\n𝔻𝕐𝕆ℝ 𝔽𝕆ℝ 𝕊𝔸𝔽𝔼 𝔼ℕ𝕋ℝ𝕐\\.\n\nCA \\- ${ca}\n\nJoin telegram channel ${channel_url}"
         ],
         "telegram":[
-            "*🐭Jerry's GAMBLE🎲*\n\n🪙 *${name} \\- $${symbol}*\n\n_${description}_\n\n*✔️ RENOUNCED*\n*✔️ FREEZE REVOKED*\n*✔️ BURN 100%*\n\n📌 *`${ca}`*\n⚡️ *Buy quickly with [META BOT](${meta_bot}) \\| [SOL TRADING BOT](${sol_trading_bot})*\n${info}\n📈 [Dexscreener](${dex_url}) \\| [Birdeye](${bireye_url}) \\| [Photon](${photon_url})"
+            "*🐭 Jerry's GAMBLE🎲*\n\n*${name} \\- $${symbol} \\(SOL\\)*\n\n_${description}_\n\n*✅ RENOUNCED*\n*✅ FREEZE REVOKED*\n*✅ BURN 100%*\n\n📌 *`${ca}`*\n⚡️ *Buy quickly with [META BOT](${meta_bot})*\n\n${info}${scan}\n\n📞 Don't forget to DM [Jerry](https://t\\.me/callerjerry) for the alpha call\\!"
         ]
     },
     "description":{

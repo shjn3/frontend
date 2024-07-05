@@ -5,6 +5,7 @@ import telegramUtils from './api/telegram.js'
 import { get_dexscreen_pair } from './api/dexscreen.ts'
 import getDescriptionToken from './token/getDescriptionToken.ts'
 import getInfoToken from './token/getInfoToken.ts'
+import getScanToken from './token/getScanToken.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div id="input_container">
@@ -35,31 +36,45 @@ btn_send?.addEventListener("click", async () => {
     return;
   }
   const tokensResponse: TokensResponse = await get_dexscreen_pair(ca);
-  if (tokensResponse.pairs == null || tokensResponse.pairs == undefined) {
-    return;
+  const pair: Pair | null = (tokensResponse.pairs == null || tokensResponse.pairs == undefined) ? null :
+    tokensResponse.pairs.length > 0 ? tokensResponse.pairs[0] : null;
+  let scanInfo: { name: string, value: string }[] = []
+  if (pair != null) {
+    scanInfo = [
+      {
+        name: "Dexscreener",
+        value: `https://dexscreener.com/solana/${ca}`
+      },
+      {
+        name: "Birdeye",
+        value: `https://birdeye.so/token/${ca}`
+      }
+    ]
   }
-  if (tokensResponse.pairs.length == 0) {
-    return;
-  }
-
-  const pair = tokensResponse.pairs[0];
+  scanInfo = [...scanInfo, {
+    name: "Photon",
+    value: `https://photon-sol.tinyastro.io/en/r/@jerrycaller/${ca}`
+  }, {
+    name: "PUMP\\.fun",
+    value: `https://pump.fun/${ca}`
+  }]
 
   const variables: { [key: string]: string } = {
-    name: pair.baseToken.name,
-    symbol: pair.baseToken.symbol,
+    name: pair?.baseToken.name || "",
+    symbol: pair?.baseToken.symbol || "",
     ca: ca_input?.value || "",
-    dex_url: (`https://dexscreener.com/solana/${ca}`),
-    photon_url: `https://photon-sol.tinyastro.io/en/r/@jerrycaller/${ca}`,
-    bireye_url: `https://birdeye.so/token/${ca}`,
     sol_trading_bot: `https://t.me/SolTradingBot?start=${ca}-DRDAzntWc`,
     trojan_bot: `https://t.me/solana_trojanbot?start=r-shj_n3-${ca}`,
     meta_bot: `https://t.me/MetaSolanaBot?start=ESGFYCYF`,
     caller_twitter_url: "https://x.com/lorecarbia",
     caller_telegram_url: "https://t.me/callerjerry",
     channel_url: "https://t.me/jerrysgamble",
+    scan: getScanToken(scanInfo),
     description: getDescriptionToken(pair),
     info: getInfoToken(pair)
   }
+
+
   const value = generateMessage(variables)
   telegramUtils.send_message(value.telegram)
   telegramUtils.send_message(value.x)
