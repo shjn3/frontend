@@ -6,6 +6,7 @@ import { get_dexscreen_pair } from './api/dexscreen.ts'
 import getDescriptionToken from './token/getDescriptionToken.ts'
 import getInfoToken from './token/getInfoToken.ts'
 import getScanToken from './token/getScanToken.ts'
+import escape from './utils/escape.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div id="input_container">
@@ -60,8 +61,8 @@ btn_send?.addEventListener("click", async () => {
   }]
 
   const variables: { [key: string]: string } = {
-    name: pair?.baseToken.name || "",
-    symbol: pair?.baseToken.symbol || "",
+    name: escape(pair?.baseToken.name || ""),
+    symbol: escape(pair?.baseToken.symbol || ""),
     ca: ca_input?.value || "",
     sol_trading_bot: `https://t.me/SolTradingBot?start=${ca}-DRDAzntWc`,
     trojan_bot: `https://t.me/solana_trojanbot?start=r-shj_n3-${ca}`,
