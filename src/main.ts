@@ -66,6 +66,7 @@ btn_send?.addEventListener("click", async () => {
     sol_trading_bot: `https://t.me/SolTradingBot?start=${ca}-DRDAzntWc`,
     trojan_bot: `https://t.me/solana_trojanbot?start=r-shj_n3-${ca}`,
     meta_bot: `https://t.me/MetaSolanaBot?start=ESGFYCYF`,
+    gmgn_bot: `https://t.me/GMGN_sol_bot?start=i_3gO5u7fq_c_${ca}`,
     caller_twitter_url: "https://x.com/lorecarbia",
     caller_telegram_url: "https://t.me/callerjerry",
     channel_url: "https://t.me/jerrysgamble",
