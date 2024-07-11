@@ -45,18 +45,11 @@ btn_send?.addEventListener("click", async () => {
       {
         name: "Dexscreener",
         value: `https://dexscreener.com/solana/${ca}`
-      },
-      {
-        name: "Birdeye",
-        value: `https://birdeye.so/token/${ca}`
       }
     ]
   }
   scanInfo = [...scanInfo, {
-    name: "Photon",
-    value: `https://photon-sol.tinyastro.io/en/r/@jerrycaller/${ca}`
-  }, {
-    name: "PUMP\\.fun",
+    name: "Pumpfun",
     value: `https://pump.fun/${ca}`
   }]
 
@@ -68,9 +61,9 @@ btn_send?.addEventListener("click", async () => {
     trojan_bot: `https://t.me/solana_trojanbot?start=r-shj_n3-${ca}`,
     meta_bot: `https://t.me/MetaSolanaBot?start=ESGFYCYF`,
     gmgn_bot: `https://t.me/GMGN_sol_bot?start=i_3gO5u7fq_c_${ca}`,
-    caller_twitter_url: "https://x.com/lorecarbia",
-    caller_telegram_url: "https://t.me/callerjerry",
-    channel_url: "https://t.me/jerrysgamble",
+    caller_twitter_url: "https://x\\.com/lorecarbia",
+    caller_telegram_url: "https://t\\.me/callerjerry",
+    channel_url: "https://t\\.me/jerrysgamble",
     scan: getScanToken(scanInfo),
     description: getDescriptionToken(pair),
     info: getInfoToken(pair)
@@ -81,10 +74,5 @@ btn_send?.addEventListener("click", async () => {
   telegramUtils.send_message(value.telegram)
   telegramUtils.send_message(value.x)
 })
-
-
-
-
-
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)

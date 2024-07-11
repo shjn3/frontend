@@ -7,7 +7,7 @@ function generateMessage(variables: { [key: string]: string }) {
 
     for (const [key, value] of Object.entries(variables)) {
         const placeholder = new RegExp(`\\$\\{${key}\\}`, 'g');
-        x_msg = x_msg.replace(placeholder, value.replace('.', '\\.'));
+        x_msg = x_msg.replace(placeholder, value);
         telegram_msg = telegram_msg.replace(placeholder, value);
     }
 
